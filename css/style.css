@@ -34,6 +34,11 @@ body
     background: #eee;
 }
 
+section
+{
+    padding: 2rem 9%;
+}
+
 .btn
 {
     border: .2rem solid var(--black);
@@ -308,7 +313,35 @@ text-align: center;
     color:var(--green);
 }
 
+.home
+{
+    display: flex;
+    justify-content: center;
+    background: url(../image/5849d328ac8a394598347460a365b24d.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-top: 17rem;
+    padding-bottom: 10rem;
+}
 
+.home .content
+{
+    text-align: center;
+    width: 70rem;
+}
+
+.home .content h3
+{
+    Color :var(--black);
+    font-size: 4rem;
+}
+
+.home .content p
+{
+    color: #130f40;
+    font-size: 2rem;
+    padding: 1rem;
+}
 
 
 
@@ -318,6 +351,10 @@ text-align: center;
  {
     font-size: 55%;
  }   
+ section
+ {
+    padding: 2rem;
+ }
 }
 
 @media (max-width :768px)
@@ -327,6 +364,11 @@ text-align: center;
         display: inline-block;
     }
 
+
+    .header .search-form
+    {
+        width: 90%;
+    }
 
     .header .navbar
     {
