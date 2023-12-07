@@ -118,7 +118,7 @@ body
         display: none;
 }
 
-.header .navbar.login-form.active
+.header .navbar .login-form.active
 {
 right: 2rem;
 transition: .4s linear;
