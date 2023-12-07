@@ -44,6 +44,7 @@ body
     border-radius: .5rem;
     color: var(--black);
     cursor: pointer;
+    background: none;
 }
 
 
@@ -115,6 +116,12 @@ body
 #menu-btn
 {
         display: none;
+}
+
+.header .navbar.login-form.active
+{
+right: 2rem;
+transition: .4s linear;
 }
 
 .header .search-form
@@ -245,3 +252,104 @@ body
     margin: 1rem 0;
 }
 
+.header .login-form
+{
+border: 1px solid;
+position: absolute;
+width: 32rem;
+top: 110%; 
+right: -110%;
+box-shadow: var(--box-shadow);
+padding: 2rem;
+border-radius: .5rem;
+background: #fff;
+text-align: center;
+}
+
+.header .login-form.active 
+{
+    right : 2rem;
+    transition: .4s linear;
+}
+
+.header .login-form h3
+{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: var(--black);
+}
+
+.header .login-form .box
+{
+    width: 100%;
+    border: 1px solid;
+    margin: .7rem 0;
+    background: #eee;
+    border-radius: .5rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: var(--black);
+    text-transform: none;
+}
+
+.header .login-form p
+{
+    font-size: 1.4rem;
+    padding: .5rem 0;
+    color:var(--light-color);
+}
+
+.header .login-form p a
+{
+    font-size: 1.4rem;
+    padding: .5rem 0;
+    color:var(--green);
+}
+
+
+
+
+
+@media (max-width :991px)
+{
+ html 
+ {
+    font-size: 55%;
+ }   
+}
+
+@media (max-width :768px)
+{
+    #menu-btn
+    {
+        display: inline-block;
+    }
+
+
+    .header .navbar
+    {
+        position: absolute;
+        top: 110%;
+        right: -110%;
+        width: 30rem;
+        box-shadow: var(--box-shadow);
+        border-radius: .5rem;
+        background: #fff;
+
+    }
+
+    .header .navbar a
+    {
+        font-size: 2rem;
+        margin: 2rem 2.5rem;
+        display: block;
+    }
+}
+
+@media (max-width :450px)
+{
+ html 
+ {
+    font-size: 50%;
+ }   
+}
